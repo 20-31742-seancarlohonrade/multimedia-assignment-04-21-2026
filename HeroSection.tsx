@@ -1,4 +1,5 @@
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import profileImage from 'https://lh3.googleusercontent.com/a/ACg8ocI0R08qPRZk03Jo7g4loLQ2aHvLiWzCaEntoqjpy1RgENVkUa8=s288-c-no';
 
 export function HeroSection() {
   return (
@@ -44,10 +45,11 @@ export function HeroSection() {
 
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white">
-              {/* Replace with your actual photo */}
-              <div className="w-full h-[500px] bg-gradient-to-br from-purple-200 to-purple-400 flex items-center justify-center">
-                <div className="text-white text-6xl font-bold">SCH</div>
-              </div>
+              <img
+                src={profileImage}
+                alt="Sean Carlo Honrade"
+                className="w-full h-[500px] object-cover object-top"
+              />
               <div className="absolute inset-0 bg-gradient-to-tr from-purple-600/10 to-transparent"></div>
             </div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-600 rounded-full opacity-10"></div>
